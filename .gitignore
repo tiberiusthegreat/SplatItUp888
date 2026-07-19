@@ -1,0 +1,10 @@
+splatitup.local.psd1
+runs/
+tools/
+.venv/
+__pycache__/
+*.pyc
+*.log
+.test-output/
+.DS_Store
+Thumbs.db

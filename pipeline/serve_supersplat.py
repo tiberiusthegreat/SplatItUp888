@@ -11,6 +11,7 @@ import sys
 dist = Path(sys.argv[1]).resolve()
 splat = Path(sys.argv[2]).resolve()
 port = int(sys.argv[3]) if len(sys.argv) > 3 else 3010
+host = sys.argv[4] if len(sys.argv) > 4 else "127.0.0.1"
 
 
 class SuperSplatHandler(SimpleHTTPRequestHandler):
@@ -28,5 +29,5 @@ class SuperSplatHandler(SimpleHTTPRequestHandler):
 
 
 handler = partial(SuperSplatHandler, directory=str(dist))
-server = ThreadingHTTPServer(("127.0.0.1", port), handler)
+server = ThreadingHTTPServer((host, port), handler)
 server.serve_forever()

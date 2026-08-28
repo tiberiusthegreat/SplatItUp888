@@ -1,6 +1,7 @@
 splatitup.local.psd1
 runs/
 tools/
+target/
 .venv/
 __pycache__/
 *.pyc

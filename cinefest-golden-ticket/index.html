@@ -6,61 +6,50 @@
 <meta name="robots" content="noindex,nofollow">
 <title>Mom & Dad — You’re Invited to Cinéfest</title>
 <style>
-:root{--black:#080706;--ink:#f7f1df;--gold:#d6b35c;--gold2:#f3d98f;--muted:#c9bea2;--line:#6e5724;--card:#12100d}
-*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top,#1b160d 0,#0b0907 38%,#050403 100%);color:var(--ink);font-family:Arial,Helvetica,sans-serif}.page{width:min(1180px,calc(100% - 28px));margin:0 auto;padding:24px 0 50px}.ticket{border:1px solid var(--line);border-radius:28px;overflow:hidden;background:linear-gradient(180deg,#17130d,#0c0a07);box-shadow:0 30px 80px rgba(0,0,0,.45)}.hero{padding:34px 34px 28px;text-align:center;border-bottom:1px dashed var(--line);position:relative}.hero:before,.hero:after{content:"";position:absolute;bottom:-16px;width:32px;height:32px;border-radius:50%;background:#080706}.hero:before{left:-16px}.hero:after{right:-16px}.eyebrow{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold2);font-weight:700}.hero h1{font-family:Georgia,serif;font-size:clamp(50px,8vw,100px);line-height:.9;margin:14px 0 12px;font-weight:500;color:var(--gold2)}.hero p{margin:0 auto;max-width:720px;color:var(--muted);font-size:18px}.meta{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line)}.meta div{background:#0d0b08;padding:18px;text-align:center}.meta b{display:block;color:var(--gold2);font-size:14px;text-transform:uppercase;letter-spacing:.12em;margin-bottom:4px}.meta span{font-size:15px;color:var(--ink)}.content{padding:30px}.screening{margin-bottom:30px}.screening-head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:14px}.time{font-family:Georgia,serif;font-size:44px;color:var(--gold2)}.program{color:var(--muted);font-size:13px;text-transform:uppercase;letter-spacing:.13em}.poster-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.poster{background:var(--card);border:1px solid #2c2417;border-radius:16px;overflow:hidden}.poster img{display:block;width:100%;aspect-ratio:2/3;object-fit:cover;background:#000}.poster-body{padding:14px}.poster h2{font-family:Georgia,serif;font-size:25px;line-height:1;margin:0 0 8px;color:#fff}.role{color:var(--gold2);font-weight:700;font-size:14px}.small{margin-top:6px;color:#a99e85;font-size:12px;line-height:1.4}.actions{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;padding:6px 30px 34px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:999px;border:1px solid var(--gold);color:var(--gold2);font-weight:700;text-decoration:none}.btn.primary{background:var(--gold2);color:#171109}.note{text-align:center;color:var(--muted);font-size:13px;padding:0 24px 28px}.footer{text-align:center;color:#756b58;font-size:12px;margin-top:18px}@media(max-width:900px){.poster-grid{grid-template-columns:repeat(2,1fr)}.meta{grid-template-columns:1fr}.screening-head{align-items:start;flex-direction:column;gap:2px}}@media(max-width:560px){.page{width:min(100% - 14px,1180px);padding-top:8px}.hero,.content{padding-left:18px;padding-right:18px}.hero h1{font-size:54px}.poster-grid{grid-template-columns:1fr 1fr;gap:10px}.poster h2{font-size:19px}.poster-body{padding:10px}.role{font-size:12px}.time{font-size:36px}}
+:root{--bg:#090806;--panel:#13100a;--ink:#f6f0df;--muted:#c4b89b;--gold:#d9b85f;--gold2:#f6df9a;--line:#755d25}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top,#21190b 0,#0b0906 42%,#050403 100%);color:var(--ink);font-family:Arial,Helvetica,sans-serif}.page{width:min(1120px,calc(100% - 24px));margin:auto;padding:18px 0 42px}.ticket{border:1px solid var(--line);background:linear-gradient(180deg,#18130b,#0c0906);border-radius:28px;overflow:hidden;box-shadow:0 28px 80px rgba(0,0,0,.5)}.hero{padding:38px 26px 30px;text-align:center;border-bottom:1px dashed var(--line)}.festival{font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--gold2);font-size:12px}.hero h1{font-family:Georgia,serif;font-size:clamp(48px,8vw,92px);line-height:.92;margin:14px 0 10px;font-weight:500}.hero .sub{font-family:Georgia,serif;font-size:clamp(26px,4vw,44px);color:var(--gold2);margin-bottom:18px}.date{display:inline-block;border:1px solid var(--gold);padding:10px 16px;border-radius:999px;color:var(--gold2);font-weight:800;letter-spacing:.05em}.hero p{max-width:690px;margin:18px auto 0;color:var(--muted);font-size:17px}.schedule{padding:28px}.program{border-top:1px solid #302717;padding-top:25px;margin-top:25px}.program:first-child{border-top:0;padding-top:0;margin-top:0}.program-head{display:grid;grid-template-columns:150px 1fr auto;gap:18px;align-items:center;margin-bottom:16px}.time{font-family:Georgia,serif;font-size:42px;color:var(--gold2);line-height:1}.program-title{font-size:14px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);font-weight:800}.program-title strong{display:block;text-transform:none;letter-spacing:0;color:#fff;font-family:Georgia,serif;font-size:28px;font-weight:500;margin-top:4px}.buy{display:inline-flex;padding:11px 15px;border-radius:999px;background:var(--gold2);color:#171108;text-decoration:none;font-size:13px;font-weight:800}.poster-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.poster{display:grid;grid-template-columns:150px 1fr;overflow:hidden;border:1px solid #2f2718;background:var(--panel);border-radius:16px}.poster img{width:100%;height:100%;min-height:210px;object-fit:cover;background:#000}.poster-body{padding:16px}.poster h2{font-family:Georgia,serif;font-size:27px;line-height:1;margin:0 0 8px}.role{color:var(--gold2);font-weight:800;font-size:14px}.small{font-size:12px;color:#a99d84;margin-top:6px;line-height:1.4}.footer-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;padding:6px 28px 28px}.btn{display:inline-flex;padding:12px 18px;border-radius:999px;border:1px solid var(--gold);color:var(--gold2);text-decoration:none;font-size:14px;font-weight:800}.note{text-align:center;color:var(--muted);font-size:13px;padding:0 22px 30px}.brandbar{text-align:center;padding:14px;border-top:1px solid var(--line);color:#8f8062;font-size:11px;letter-spacing:.12em;text-transform:uppercase}@media(max-width:760px){.program-head{grid-template-columns:1fr;gap:6px}.buy{justify-self:start}.poster-grid{grid-template-columns:1fr}.poster{grid-template-columns:115px 1fr}.poster img{min-height:170px}.schedule{padding:20px}.time{font-size:36px}.program-title strong{font-size:24px}.hero{padding-left:18px;padding-right:18px}}
 </style>
 </head>
 <body>
-<div class="page">
-  <div class="ticket">
-    <section class="hero">
-      <div class="eyebrow">Cinéfest Sudbury 2026 · Family Invitation</div>
-      <h1>Mom & Dad,<br>You’re Invited.</h1>
-      <p>Come see four films I was lucky enough to make with some incredible people, all screening at Cinéfest on the same night.</p>
-    </section>
-
-    <section class="meta">
-      <div><b>Date</b><span>Saturday, September 26, 2026</span></div>
-      <div><b>Venue</b><span>SilverCity Sudbury · 355 Barry Downe Road</span></div>
-      <div><b>Plan</b><span>Two programs · Four films</span></div>
-    </section>
-
-    <section class="content">
-      <div class="screening">
-        <div class="screening-head"><div class="time">7:30 PM</div><div class="program">Sudbury’s Shorter Superstacks</div></div>
-        <div class="poster-grid">
-          <article class="poster">
-            <img src="https://static.wixstatic.com/media/dbffc9_56cb3ade3a63462498185124bbcd5342~mv2.png" alt="Wherever the Wind Blows">
-            <div class="poster-body"><h2>Wherever the Wind Blows</h2><div class="role">Writer · Director · Producer</div><div class="small">Scriptfest short film</div></div>
-          </article>
-          <article class="poster">
-            <img src="https://static.wixstatic.com/media/dbffc9_11a2d5590f5d416093b4eb21d3ca06ae~mv2.png" alt="Nightstands">
-            <div class="poster-body"><h2>Nightstands</h2><div class="role">Producer · Cinematographer</div><div class="small">Written & directed by Emily Fraser</div></div>
-          </article>
-          <article class="poster">
-            <img src="https://static.wixstatic.com/media/dbffc9_3ad999d442f3412db69675a37ddc13ea~mv2.png" alt="The Squirrel Diaries">
-            <div class="poster-body"><h2>The Squirrel Diaries</h2><div class="role">Producer</div><div class="small">Written & directed by KJ Carter</div></div>
-          </article>
-          <article class="poster">
-            <img src="https://screenanarchy.com/assets_c/2026/08/jersey%20jacob%20sudbury-thumb-860xauto-106335.png" alt="Starsuckers">
-            <div class="poster-body"><h2>Starsuckers</h2><div class="role">Cinematographer</div><div class="small">Feature film · Directed by Brett & Jason Butler</div></div>
-          </article>
-        </div>
-      </div>
-
-      <div class="screening">
-        <div class="screening-head"><div class="time">9:30 PM</div><div class="program">Starsuckers with The Squirrel Diaries</div></div>
-      </div>
-    </section>
-
-    <div class="actions">
-      <a class="btn primary" href="https://tix.cinefest.com/websales/pages/list.aspx?epguid=d103901a-7888-4562-9114-926e8f59b31e" target="_blank" rel="noopener">Tickets & Schedule</a>
-      <a class="btn" href="https://www.google.com/maps/search/?api=1&query=SilverCity+Sudbury+355+Barry+Downe+Road+Sudbury+Ontario" target="_blank" rel="noopener">Directions</a>
-      <a class="btn" href="https://www.youtube.com/watch?v=Blc0q0frJ24" target="_blank" rel="noopener">Starsuckers Trailer</a>
-    </div>
-    <div class="note">To see all four films, you’ll need admission to both the 7:30 PM and 9:30 PM programs.</div>
-  </div>
-  <div class="footer">Made for Mom & Dad · Cinéfest Sudbury 2026</div>
+<div class="page"><div class="ticket">
+<section class="hero">
+<div class="festival">Cinéfest Sudbury International Film Festival</div>
+<h1>Mom & Dad,<br>You’re Invited.</h1>
+<div class="sub">Four films. One night.</div>
+<div class="date">SATURDAY · SEPTEMBER 26, 2026</div>
+<p>Come see the films I’ve been working on at Cinéfest. Everything you need for the night is below.</p>
+</section>
+<section class="schedule">
+<div class="program">
+<div class="program-head">
+<div class="time">7:30 PM</div>
+<div class="program-title">Cinéfest Program<strong>Sudbury’s Shorter Superstacks</strong></div>
+<a class="buy" href="https://cinefest.com/tickets" target="_blank" rel="noopener">Buy tickets ↗</a>
 </div>
+<div class="poster-grid">
+<article class="poster"><img src="https://static.wixstatic.com/media/dbffc9_56cb3ade3a63462498185124bbcd5342~mv2.png" alt="Wherever the Wind Blows"><div class="poster-body"><h2>Wherever the Wind Blows</h2><div class="role">Writer · Director · Producer</div><div class="small">Scriptfest short film</div></div></article>
+<article class="poster"><img src="https://static.wixstatic.com/media/dbffc9_11a2d5590f5d416093b4eb21d3ca06ae~mv2.png" alt="Nightstands"><div class="poster-body"><h2>Nightstands</h2><div class="role">Producer · Cinematographer</div><div class="small">Written & directed by Emily Fraser</div></div></article>
+</div>
+</div>
+<div class="program">
+<div class="program-head">
+<div class="time">9:30 PM</div>
+<div class="program-title">Cinéfest Program<strong>Starsuckers with The Squirrel Diaries</strong></div>
+<a class="buy" href="https://cinefest.com/tickets" target="_blank" rel="noopener">Buy tickets ↗</a>
+</div>
+<div class="poster-grid">
+<article class="poster"><img src="https://screenanarchy.com/assets_c/2026/08/jersey%20jacob%20sudbury-thumb-860xauto-106335.png" alt="Starsuckers"><div class="poster-body"><h2>Starsuckers</h2><div class="role">Cinematographer</div><div class="small">Feature film · Directed by Brett & Jason Butler · Canadian premiere</div></div></article>
+<article class="poster"><img src="https://static.wixstatic.com/media/dbffc9_3ad999d442f3412db69675a37ddc13ea~mv2.png" alt="The Squirrel Diaries"><div class="poster-body"><h2>The Squirrel Diaries</h2><div class="role">Producer</div><div class="small">Written & directed by KJ Carter · Scriptfest short film</div></div></article>
+</div>
+</div>
+</section>
+<div class="footer-actions">
+<a class="btn" href="https://tix.cinefest.com/websales/pages/list.aspx?epguid=d103901a-7888-4562-9114-926e8f59b31e" target="_blank" rel="noopener">Official Film Schedule ↗</a>
+<a class="btn" href="https://cinefest.com/tickets" target="_blank" rel="noopener">Cinéfest Tickets ↗</a>
+<a class="btn" href="https://www.youtube.com/watch?v=Blc0q0frJ24" target="_blank" rel="noopener">Starsuckers Trailer ↗</a>
+</div>
+<div class="note">Both programs are on Saturday, September 26. To see all four films, you’ll need admission to both the 7:30 PM and 9:30 PM screenings.</div>
+<div class="brandbar">SilverCity Sudbury · 355 Barry Downe Road · Cinéfest Sudbury 2026</div>
+</div></div>
 </body>
 </html>

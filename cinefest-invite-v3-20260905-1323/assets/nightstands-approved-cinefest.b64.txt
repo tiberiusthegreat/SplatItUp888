@@ -1,0 +1,1 @@
+This file intentionally documents that the authoritative source is local/NAS only. The render asset itself is committed separately as binary.

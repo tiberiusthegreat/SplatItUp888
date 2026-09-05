@@ -1,0 +1,27 @@
+name: Fetch approved Nightstands still
+on:
+  push:
+    branches: [cinefest-family-2026]
+    paths: ['.github/workflows/cinefest-fetch-nightstands.yml']
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: cinefest-family-2026
+      - name: Fetch approved still from temporary MotionArc tunnel
+        run: |
+          mkdir -p cinefest-assets
+          curl -fL --retry 3 -H 'bypass-tunnel-reminder: 1' 'https://cute-pets-say.loca.lt/nightstands-approved.jpg' -o cinefest-assets/nightstands-approved.jpg
+          file cinefest-assets/nightstands-approved.jpg
+          test $(stat -c%s cinefest-assets/nightstands-approved.jpg) -gt 100000
+      - name: Commit asset
+        run: |
+          git config user.name 'cinefest-publisher'
+          git config user.email 'actions@users.noreply.github.com'
+          git add cinefest-assets/nightstands-approved.jpg
+          git commit -m 'Add approved Nightstands Cinefest still'
+          git push origin cinefest-family-2026
